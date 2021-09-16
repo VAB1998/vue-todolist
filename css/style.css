@@ -1,0 +1,23 @@
+/* RESET */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* Style */
+    background-color:  #fff5a0;
+}
+
+header h1 {
+    /* Style */
+    text-align: center;
+    font-weight: bold;
+}
+
+li{
+    /* Style */
+    list-style-type: none;
+    font-size: 2rem;
+}

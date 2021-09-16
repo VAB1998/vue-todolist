@@ -14,11 +14,20 @@ let app = new Vue({
     },
 
     methods: {
+        /**
+         * Delete an object with a known index from the HTML
+         * @param {*} index  Position of the object
+         */
+        deleteItemList : function(index){
+        console.log(index)
+        this.list.splice(index, 1)
+       },
 
-        deleteListItem : function(listItem){
-        console.log(this.list.indexOf(listItem))
-        console.log(listItem)
-
+       addItem(){
+           console.log('Input Received!!')
        }
+
+
+
     }
 }); 

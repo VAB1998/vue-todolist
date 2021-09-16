@@ -8,6 +8,8 @@
 body{
     /* Style */
     background-color:  #fff5a0;
+    font-size: 2rem;
+
 }
 
 header h1 {
@@ -16,8 +18,18 @@ header h1 {
     font-weight: bold;
 }
 
-li{
+ul{
+    padding-left: 10px;
     /* Style */
     list-style-type: none;
-    font-size: 2rem;
+}
+
+
+#add_items_input_text{
+    background-color: #ffffffa3;
+    border-radius: 6px
+}
+
+#add_items{
+    margin: 20px 0 20px 6px;
 }

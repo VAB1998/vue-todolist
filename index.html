@@ -25,11 +25,17 @@
     </header>
 
     <div id="app">
-        <!-- ++++++List++++++ -->
+        <!-- ------Add Items------ -->
+        <div id="add_items">
+
+            <input v-on:keyup.enter="addItem()"  id="add_items_input_text" type="text" placeholder="Add new items">
+
+        </div>
+        <!-- ------List------ -->
         <ul>
-            <li v-for="(listItem, index) in list">
-                <i v-on:click="deleteListItem(listItem)" class="fas fa-times"></i>
-                {{listItem}}
+            <li v-for="(itemList, indexList) in list">
+                <i v-on:click="deleteItemList(indexList)" class="fas fa-times"></i>
+                {{itemList}}
             </li>
         </ul>
     </div>

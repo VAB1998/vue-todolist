@@ -10,24 +10,29 @@ let app = new Vue({
     el: '#app',
 
     data: {
-        list : ['Cipolla', 'Latte', 'Pasta', 'Cereali', 'Banane']
+        list : ['Cipolla', 'Latte', 'Pasta', 'Cereali', 'Banane'],
+        
+        message : ''
     },
 
     methods: {
+
         /**
          * Delete an object with a known index from the HTML
          * @param {*} index  Position of the object
          */
         deleteItemList : function(index){
-        console.log(index)
-        this.list.splice(index, 1)
+            this.list.splice(index, 1)
+            //Check
+            console.log(index)
        },
 
-       addItem(){
+       addItem(){  
+           this.message== '' ? '' : this.list.push(this.message)
+           this.message = ''
+           //Check
            console.log('Input Received!!')
        }
-
-
 
     }
 }); 

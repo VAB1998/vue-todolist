@@ -28,8 +28,11 @@
         <!-- ------Add Items------ -->
         <div id="add_items">
 
-            <input v-on:keyup.enter="addItem()"  id="add_items_input_text" type="text" placeholder="Add new items">
-
+            <input v-on:keyup.enter="addItem()"  v-model="message"  type="text" placeholder=" Add new items">
+            <button v-on:click="addItem" >
+                <i class="fas fa-plus"></i>
+            </button>
+            <p> {{message }}</p>
         </div>
         <!-- ------List------ -->
         <ul>

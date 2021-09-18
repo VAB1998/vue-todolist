@@ -26,23 +26,28 @@
 
     <div id="app">
         <!-- ------Add Items------ -->
-        <div id="add_items">
+        <div id="add_to_do">
 
-            <input v-on:keyup.enter="addItem()"  v-model="message"  type="text" placeholder=" Add new items">
-            <button v-on:click="addItem" >
+            <input v-on:keyup.enter="addToDo()"  v-model="message"  type="text" placeholder=" Add new items">
+            
+            <button v-on:click="addToDo()" >
                 <i class="fas fa-plus"></i>
             </button>
 
         </div>
-        <!-- ------List------ -->
-        <ul>
-            <li v-for="(itemList, indexList) in list">
-                <i v-on:click="deleteItemList(indexList)" class="fas fa-times"></i>
-                {{itemList}}
-            </li>
-        </ul>
+        <!-- ------To Do List------ -->
+        <div id="to_do_list">
+            <ul>
+                <li v-for="(itemList, indexList) in list">
+                    <i v-on:click="deleteItemList(indexList)" class="fas fa-times"></i>
+                    <span v-on:click="checkItem(itemList)"   :class="{ done_item : itemList.done }">
+                        {{itemList.toDo}}
+                    </span>
+                </li>
+            </ul>
+        </div>
     </div>
-    
+
     <!-- JS Import -->
     <script type="text/javascript" src="javascript/script.js">
     </script>

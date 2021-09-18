@@ -9,6 +9,7 @@ body{
     /* Style */
     background-color:  #a0d2ff;
     font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
 }
 
 ul{
@@ -24,13 +25,13 @@ header h1 {
     font-weight: bold;
 }
 
-/* ------Add Items------ */
-#add_items{
+/* ------Add To Do------ */
+#add_to_do{
     /* Spacing and Dimensions */
     margin: 20px 0 20px 10px;
 }
 
-#add_items input{
+#add_to_do input{
     /* Style */
     background-color: #ffffffa3;
     border-radius: 6px;
@@ -40,12 +41,12 @@ header h1 {
 
 }
 
-#add_items input:hover,
-#add_items input:focus-visible{
+#add_to_do input:hover,
+#add_to_do input:focus-visible{
     border: 4px solid #a0d2ff7d;
 }
 
-#add_items button{
+#add_to_do button{
     /* Style */
     border-radius: 50%;
     background-color: #ffffffa3;
@@ -57,7 +58,32 @@ header h1 {
 
 }
 
-#add_items button:hover{
+#add_to_do button:hover{
     border: 4px solid #a0d2ff7d;
 
 }
+/* ------To Do List------ */
+#to_do_list .done_item {
+    text-decoration: line-through;
+}
+
+#to_do_list i,
+#to_do_list span{
+    /* Other Settings */
+    cursor: pointer;
+    transition: .3s linear;
+
+}
+
+#to_do_list i:hover{
+    /* Style */
+    color: white;
+}
+
+#to_do_list span:hover{
+    /* Style */
+    text-decoration: line-through;
+}
+
+
+
